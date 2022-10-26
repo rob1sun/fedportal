@@ -52,7 +52,7 @@ const text = pickedIdpDisplay(select);
 const myOrgContent=`
 <div class="flex-header wrap">
 <div class="flex-headeritem-org"><h1 id="show">Ingen vald organisation</h1></div>
-<div class="flex-headeritem-org"><button class="button" onclick="reload()">Välj en annan organisation</button></div>
+<div class="flex-headeritem-org"><button class="button" onclick="reload()">Byt inloggning</button></div>
 </div>
 `;
 
