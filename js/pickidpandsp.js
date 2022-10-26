@@ -109,6 +109,6 @@ const li = document.createElement('li');
 
 //Visa alert box och ladda därefter om dokumentet vid "välj en annan organisation"
 function reload() {
-  alert("Du kommer nu att kunna göra om ditt val av organisation, men tänk på att om du redan har loggat in i en tjänst så kommer tjänsten komma ihåg den inloggningen. Du kan därför behöva stänga webbläsaren och öppna portalen igen.");
+  alert("Du kommer nu att kunna göra om ditt val av organisation, men tänk på att om du redan har loggat in i en tjänst så kommer tjänsten att komma ihåg den inloggningen. Du kan därför behöva stänga webbläsaren och öppna portalen igen.");
   location.reload();
 }
