@@ -1,7 +1,7 @@
 
 //Läs in IdP-array från json
 {
-		fetch('https://fedfeeds.robertsundin.se/json/multiidp.json')
+		fetch('https://fedfeeds.robertsundin.se/idp/json/multiidp.json')
             .then(function (idpResponse) {
                 return idpResponse.json();
             })
@@ -63,7 +63,7 @@ document.getElementById("show").innerHTML = text;
   
  	
 		//Läs in SP-array från json
-		fetch('https://fedfeeds.robertsundin.se/json/splink.json')
+		fetch('https://fedfeeds.robertsundin.se/sp/json/splink.json')
             .then(function (spResponse) {
                 return spResponse.json();
             })
