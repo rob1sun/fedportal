@@ -52,6 +52,11 @@ body {
 	background-color: #F3F3F3;
 }
 
+a:hover {
+   font-weight: bold;
+   transform: scale(1.07);
+}
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -72,24 +77,24 @@ body {
 }  
 
 .flex-item {
-  width: 10vw;
-  min-width: 150px;
-  height: auto;
+  width: 20vw;
+  min-width: 300px;
+  height: 70px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: white;
   margin: 10px;
-  padding-top: 8px;
+  padding: 12px;
   color: gray;
   font-weight: normal;
   font-size: auto;
-  text-align: center;
+  text-align: left;
+  border-radius: 20px;
+  text-decoration: none;
 }
 .flex-item-img {
-  width: 100%;
-  height: auto;
-  margin-top: 8px;
-}
-li:hover {
-   font-weight: bold;
-   transform: scale(1.07);
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 15px;
+  border-radius: 4px;
 }
