@@ -83,10 +83,7 @@ document.getElementById("show").innerHTML = text;
 				
 //Skapa lista och infoga på sida
 const dFrag = document.createDocumentFragment();
-				
-/*const li = document.createElement('li');
-  li.className = "flex-item";
-  li.textContent = spDisplayName;*/
+
   const a = document.createElement('a');
   a.className = "flex-item";
   a.setAttribute('href', concLink);
