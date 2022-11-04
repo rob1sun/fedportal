@@ -49,6 +49,8 @@ color: white;
 }
 /*Generell css för samtliga portaler*/
 body {
+        margin: 0;
+        padding: 0;
 	background-color: #F3F3F3;
 }
 
