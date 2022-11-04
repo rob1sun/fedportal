@@ -84,20 +84,22 @@ document.getElementById("show").innerHTML = text;
 //Skapa lista och infoga på sida
 const dFrag = document.createDocumentFragment();
 				
-const li = document.createElement('li');
+/*const li = document.createElement('li');
   li.className = "flex-item";
-  li.textContent = spDisplayName;
+  li.textContent = spDisplayName;*/
   const a = document.createElement('a');
-  a.className = "flex-item-link";
+  a.className = "flex-item";
   a.setAttribute('href', concLink);
   a.target = "_blank";
   const img = document.createElement('img');
   img.className = "flex-item-img";
   img.setAttribute('src', spImg);
+  const p = document.createElement('p');
+  p.innerHTML = spDisplayName;
   
-  dFrag.appendChild(li);
-  li.appendChild(a);
+  dFrag.appendChild(a);
   a.appendChild(img);
+  a.appendChild(p);
   
   document.getElementById('spList').appendChild(dFrag);
   
