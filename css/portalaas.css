@@ -4,7 +4,7 @@ margin-top: 14rem;
 text-align: center;
 padding-top: 5%;
 padding-bottom: 5%;
-background-color: tomato;
+background-color: #b53b26;
 color: white;
 }
 
@@ -12,7 +12,7 @@ color: white;
 .flex-header {
   padding: 15px;
   margin: 0;
-  background-color: tomato;
+  background-color: #b53b26;
   list-style: none;
   -ms-box-orient: horizontal;
   display: -webkit-box;
@@ -32,7 +32,7 @@ color: white;
   text-align: center;
 }
 .button {
-  background-color: tomato;
+  background-color: #b53b26;
   border: 2px solid #e7e7e7;
   color: white;
   padding: 16px 16px;
