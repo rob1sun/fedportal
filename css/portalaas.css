@@ -10,6 +10,7 @@ color: white;
 
 /*För header i portalaas*/
 .flex-header {
+  position: fixed;
   padding: 15px;
   margin: 0;
   background-color: #b53b26;
