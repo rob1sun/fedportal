@@ -55,8 +55,7 @@ body {
 }
 
 a:hover {
-   font-weight: bold;
-   transform: scale(1.07);
+   transform: scale(1.05);
 }
 
 .flex-container {
@@ -81,22 +80,22 @@ a:hover {
 .flex-item {
   width: 20vw;
   min-width: 300px;
-  height: 70px;
+  height: 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: white;
   margin: 10px;
   padding: 12px;
-  color: gray;
+  color: black;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
-  border-radius: 20px;
+  border-radius: 12px;
   text-decoration: none;
   transition: transform 300ms;
 }
 .flex-item-img {
   float: left;
-  height: 100%;
+  height: 40%;
   margin-left: 10px;
   margin-right: 15px;
   border-radius: 4px;
