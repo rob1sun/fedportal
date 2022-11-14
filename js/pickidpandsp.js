@@ -80,6 +80,8 @@ document.getElementById("show").innerHTML = text;
 				let concLink = spData[x].spLink + pickedIdp + spData[x].spTarget;
 				let spDisplayName = spData[x].spDisplayName
 				let spImg = spData[x].spImg
+				let spShortDescription = spData[x].shortDescription
+				let spDescription = spData[x].description
 				
 //Skapa lista och infoga på sida
 const dFrag = document.createDocumentFragment();
@@ -92,7 +94,8 @@ const dFrag = document.createDocumentFragment();
   img.className = "flex-item-img";
   img.setAttribute('src', spImg);
   const p = document.createElement('p');
-  p.innerHTML = spDisplayName;
+  p.innerHTML = "<b>" + spDisplayName + "</b><br>" + spShortDescription + "<br><br>" + spDescription;
+  //ful snabbfix för innerHTML för att få in kort och lång beskrivning. Lägg som egna element sen
   
   dFrag.appendChild(a);
   a.appendChild(img);
