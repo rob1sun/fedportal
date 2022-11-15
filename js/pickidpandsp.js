@@ -94,12 +94,20 @@ const dFrag = document.createDocumentFragment();
   img.className = "flex-item-img";
   img.setAttribute('src', spImg);
   const p = document.createElement('p');
-  p.innerHTML = "<b>" + spDisplayName + "</b><br>" + spShortDescription + "<br><br>" + spDescription;
-  //ful snabbfix för innerHTML för att få in kort och lång beskrivning. Lägg som egna element sen
+  p.className = "flex-item-txt";
+  p.innerHTML = spDisplayName;
+  const pOrg = document.createElement('p');
+  pOrg.className = "flex-item-org";
+  pOrg.innerHTML = spShortDescription;
+  const pDescription = document.createElement('p');
+  pDescription.innerHTML = spDescription;
+  pDescription.className = "flex-item-description";
   
   dFrag.appendChild(a);
   a.appendChild(img);
   a.appendChild(p);
+  a.appendChild(pOrg);
+  a.appendChild(pDescription);
   
   document.getElementById('spList').appendChild(dFrag);
   
