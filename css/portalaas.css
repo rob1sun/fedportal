@@ -100,8 +100,8 @@ a:hover {
 }
 .flex-item-txt {
   margin: 0px;
-  padding: 5px;
-  font-size: 20px;
+  padding-bottom: 5px;
+  font-size: 120%;
   font-weight: bold;
 }
 .flex-item-org {
@@ -109,7 +109,9 @@ a:hover {
   font-size: 16px;
 }
 .flex-item-description {
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-left: 12px;
   font-size: 16px;
+  color: DimGray;
 }
 
