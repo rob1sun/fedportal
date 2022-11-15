@@ -1,3 +1,20 @@
+//Sökfilter
+function searchFilter() {
+    var input, filter, ul, li, a, i, txtValue; //ÄNDRA
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("spList");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        p = a[i].getElementsByTagName("p")[0];
+        txtValue = a.textContent || p.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
 
 //Läs in IdP-array från json
 {
@@ -52,6 +69,7 @@ const text = pickedIdpDisplay(select);
 const myOrgContent=`
 <div class="flex-header wrap">
 <div class="flex-headeritem-org"><h1 id="show">Ingen vald organisation</h1></div>
+<input  class="flex-headeritem-search" type="text" id="searchInput" onkeyup="searchFilter()" placeholder="Sök efter en tjänst.." title="Skriv namn på tjänst">
 <div class="flex-headeritem-org"><button class="button" onclick="reload()">Byt inloggning</button></div>
 </div>
 `;
