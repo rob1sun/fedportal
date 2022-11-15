@@ -31,6 +31,18 @@ color: white;
   font-size: 16px;
   text-align: center;
 }
+
+.flex-headeritem-search {
+  width: 25vw;
+  min-width: 200px;
+  height: auto;
+  color: black;
+  border-color: white;
+  margin: 12px 0px 12px 0px;
+  font-size: 16px;
+  text-align: center;
+}
+
 .button {
   background-color: #b53b26;
   border: 2px solid #e7e7e7;
