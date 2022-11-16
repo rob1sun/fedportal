@@ -1,6 +1,6 @@
 //Sökfilter
 function searchFilter() {
-    var input, filter, ul, li, a, i, txtValue; //ÄNDRA
+    var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
     div = document.getElementById("spList");
