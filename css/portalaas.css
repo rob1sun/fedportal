@@ -63,7 +63,14 @@ color: white;
 body {
         margin: 0;
         padding: 0;
+	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
 	background-color: #F3F3F3;
+}
+
+footer{
+    margin-top: auto;
 }
 
 a:hover {
