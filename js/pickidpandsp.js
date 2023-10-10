@@ -23,13 +23,13 @@ function searchFilter() {
                 return idpResponse.json();
             })
             .then(function (idpData) {
-                appendSpData(idpData);
+                appendIdpData(idpData);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
 //Append json och nästla efterföljande script
-        function appendSpData(idpData) {
+        function appendIdpData(idpData) {
 			
             for (let y = 0; y < idpData.length; y++) {
 				let idpDisplayName = idpData[y].idpDisplayName
